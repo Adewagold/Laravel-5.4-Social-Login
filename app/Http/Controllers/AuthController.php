@@ -78,6 +78,39 @@ public function getGoogleCallback()
     return redirect('/home')->with('notification', 'Successfully logged in!');
 }
 
+public function redirectToTwitter()
+{
+    return Socialite::with('twitter')->redirect();
+}
 
+public function getTwitterCallback()
+{
+
+    $data = Socialite::with('twitter')->user();
+    $user = User::where('email', $data->email)->first();
+   
+    if(!is_null($user)) {
+        Auth::login($user);
+        $user->email = $data->email;
+        $user->provider_id = $data->id;
+        $user->save();
+        
+    } else {
+
+        $user = User::where('provider_id', $data->id)->first();
+        if(is_null($user)){
+            // Create a new user
+            echo $data->getEmail();
+            $user = new User();
+             $user->name = $data->getName();
+            $user->email = $data->getEmail();
+            $user->provider_id = $data->id;
+            $user->save();
+        }
+
+        Auth::login($user);
+    }
+    return redirect('/home')->with('notification', 'Successfully logged in!');
+}
 
 }

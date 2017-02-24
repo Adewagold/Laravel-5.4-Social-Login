@@ -33,20 +33,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+        <li class="active"><a href="#">About us <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Contact Us</a></li>
+        
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">
@@ -58,7 +47,8 @@
         @if (Route::has('login'))
                
                     @if (Auth::check())
-                       <li> <a href="{{ url('/home') }}">Home</a></li>
+                       <li> <a href="{{ url('/home') }}"><b>Welcome, </b> {{Auth::User()->name}}</a></li>
+                       <li><a href="{{Auth::Logout()}}">Logout</a></li>
                     @else
                        <li> <a href="{{ url('/login') }}">Login</a></li>
                         <li><a href="{{ url('/register') }}">Register</a></li>
@@ -84,9 +74,9 @@
     <hr/>
   </div>
 <div class="panel-body">
-    <a href="https://github.com/Adewagold/Laravel-5.4-Social-Login">Laravel 5.4 social login</a>
+    <a href="https://github.com/Adewagold/Laravel-5.4-Social-Login">Laravel 5.4 social login</a> <p> by : <a href="https://github.com/Adewagold/">Adeleye Adewale</a></p>
   </div>
-  <div>Developed by a VillageDeveloper</div>
+
 </div>
         </div></div>
         <script type="text/javascript">
