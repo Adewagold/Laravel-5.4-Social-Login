@@ -16,7 +16,7 @@
         </style>
     </head>
     <body>
-    <div class="container">
+    <div id="app">
         <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,7 +60,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-       
+      <div class="container">
 <div class="row">
             <div class="jumbotron">
   <h1>Social Login Application</h1>
@@ -68,17 +68,17 @@
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
   </div>
 </div>
+
+        </div></div>
 <div class="row">
     
-  <div class="panel-body">
+  <div class="col-md-offset-1">
     <hr/>
-  </div>
-<div class="panel-body">
-    <a href="https://github.com/Adewagold/Laravel-5.4-Social-Login">Laravel 5.4 social login</a> <p> by : <a href="https://github.com/Adewagold/">Adeleye Adewale</a></p>
+    <a href="https://github.com/Adewagold/Laravel-5.4-Social-Login">Laravel 5.4 social login</a> by: <a href="https://github.com/Adewagold/">Adeleye Adewale</a>
   </div>
 
 </div>
-        </div></div>
+         </div>
         <script type="text/javascript">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         </script>

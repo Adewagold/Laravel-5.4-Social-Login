@@ -65,9 +65,18 @@
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
-                                <button type="submit" class="btn btn-default">
-                                    Register with facebook
-                                </button>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <a href="login/google" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Login with Google</a>
+                                </div></div>
+                               <div class="form-group"> 
+                                <div class="col-md-6 col-md-offset-4"><a href="login/facebook" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Login with Facebook</a>
+                                </div></div>
+                                <div class="form-group">
+                                <div class="col-md-6 col-md-offset-4"><a href="login/facebook" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Login with Twitter</a>
                             </div>
                         </div>
                     </form>
