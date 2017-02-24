@@ -42,9 +42,21 @@ return [
     ],
 
     'google' => [
-        'client_id' => '845559153403-r54alekb0dg9eui8gvcu66lugstu8214.apps.googleusercontent.com',
-        'client_secret' => 'TwuXryTFV2iE1USBomo9-q_s',
+        'client_id' => '',
+        'client_secret' => '',
         'redirect' => 'http://localhost:8000',
     ],
+
+    'github' => [
+    'client_id' => 'your-github-app-id',
+    'client_secret' => 'your-github-app-secret',
+    'redirect' => 'http://your-callback-url',
+],
+
+'twitter' => [
+    'client_id' => '',
+    'client_secret' => '',
+    'redirect' => 'http://localhost:8000/callback/twitter',
+],
 
 ];
