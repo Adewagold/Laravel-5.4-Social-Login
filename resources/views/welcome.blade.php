@@ -86,6 +86,7 @@
 <div class="panel-body">
     <a href="https://github.com/Adewagold/Laravel-5.4-Social-Login">Laravel 5.4 social login</a>
   </div>
+  <div>Developed by a VillageDeveloper</div>
 </div>
         </div></div>
         <script type="text/javascript">
