@@ -15,6 +15,17 @@ class AuthController extends Controller
     return Socialite::with('facebook')->redirect();
 }
 
+
+public function generateRandomString($length = 10) {
+           $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+           $charactersLength = strlen($characters);
+           $randomString = '';
+           for ($i = 0; $i < $length; $i++) {
+               $randomString .= $characters[rand(0, $charactersLength - 1)];
+           }
+           return $randomString;
+       }
+
 public function getFacebookCallback()
 {
 
@@ -38,6 +49,7 @@ public function getFacebookCallback()
             $user->save();
         }
 // we will need to create a default password for every user that uses social authentication.
+
         Auth::login($user);
     }
     return redirect('/home')->with('notification', 'Successfully logged in!');
