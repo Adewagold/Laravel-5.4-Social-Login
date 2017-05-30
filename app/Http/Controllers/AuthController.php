@@ -37,7 +37,7 @@ public function getFacebookCallback()
             $user->provider_id = $data->id;
             $user->save();
         }
-
+// we will need to create a default password for every user that uses social authentication.
         Auth::login($user);
     }
     return redirect('/home')->with('notification', 'Successfully logged in!');

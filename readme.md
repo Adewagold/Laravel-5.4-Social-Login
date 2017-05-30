@@ -3,3 +3,8 @@
 A kick start laravel based application with social login and registration for your application.
 Laravel Socialite allows you to use OAuth authentication with Facebook, Twitter, Google, LinkedIn, GitHub and Bitbucket etc. So in this project, all you will need to get your project ready is to modify the api client id and secrets for the sample social platforms used and get started. 
 <br/><p><img src="http://www.pngall.com/wp-content/uploads/2016/07/Social-Media-Transparent.png" width="400" height="150"></p>
+
+In this project, the Laravel Authentication scafold has been generated already. so all you need to do is create a client key and secret then modify the provider's details in config\services.php file.
+
+# Lauch your application with http://localhost:8000
+
