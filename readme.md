@@ -6,5 +6,5 @@ Laravel Socialite allows you to use OAuth authentication with Facebook, Twitter,
 
 In this project, the Laravel Authentication scafold has been generated already. so all you need to do is create a client key and secret then modify the provider's details in config\services.php file.
 
-# Lauch your application with http://localhost:8000
+# Lauch your application with http://localhost:8000/
 
